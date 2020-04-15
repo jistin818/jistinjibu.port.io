@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<title></title>
+<style>
+* {
+     box-sizing: border-box;
+	 margin: 0;
+	 padding: 0;
+	 }
+header {
+	width:100%;
+    display: grid;
+	color:white;
+	background-color:grey;
+	grid-template-columns:150px 1050px 150px;
+	}
+header .one {
+
+
+    
+    grid-column:1/2;
+	}
+header .one img {
+     width:150px;
+	 height:100px;
+	 }
+header .two {
+
+     padding-top:25px;
+    grid-column:2/3;
+	text-align:center;
+	}
+header .three {
+    
+    grid-column:3/4;
+	dispaly: grid;
+	grid-template-rows:50px 50px;
+      
+      
+	
+	}
+header .three .about {
+    grid-column:1/2;
+	padding-top:20px;
+	
+	}
+header .three .contact {
+    grid-column:2/3;
+	
+	
+	}
+	
+ .gallery {
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-columns:50% 50%;
+}
+.gallery .pic1 {
+    grid-column:1/2;
+    grid-row:1/2;
+	margin-left:40%;
+}	
+.gallery .pic2 {
+    grid-column:2/3;
+    grid-row:1/2;
+	margin-right:20%;
+}	
+.gallery .pic3 {
+    grid-column:1/2;
+    grid-row:2/3;
+	
+	margin-left:40%;
+}	
+.gallery .pic4 {
+    grid-column:2/3;
+    grid-row:2/3;
+	margin-right:20%;
+}
+h1{
+   text-align:center;
+} 
+
+.above {
+   margin-left:20%;
+   display: grid;
+   grid-template-columns:50% 50%;
+}
+.above .firsthalf {
+   grid-column:1/2;
+   }
+.above .secondhalf {
+     margin-right: 40%%;
+   grid-column: 2/3;
+   } 
+.skills {
+  color: royalblue;
+   margin-left:20%;
+   display: grid;
+   grid-template-columns:200px 200px;
+   grid-template-rows:50px 50px;
+    }
+ .skills .skill1{
+   grid-column:1/2;
+   grid-row:1/2;
+   }
+   .skills .skill2{
+   grid-column:2/3;
+   grid-row:1/2;
+   }
+   .skills .skill3{
+   grid-column:1/2;
+   grid-row:2/3;
+   }
+   .skills .skill4{
+   grid-column:2/3;
+   grid-row:2/3;
+   }
+   h3 {
+     margin-left:20%;
+	 }
+   .contact {
+     margin-left:45%;
+	 }
+	 .footer {
+	   background-color:black;
+	   display :grid;
+	   grid-template-columns:90% 10%;
+	   
+	   }
+	 .footer .foot1{
+	   grid-column:1/2;
+	   text-align:center;
+	   color:white;
+	   padding-top:20px;
+	   }
+	  .footer .foot2 {
+	  grid-column:2/3;
+	  }
+	  .footer .foot2 img {
+	     width:150px;
+		 height:80px;
+		 }
+     h3{color: saddlebrown;}
+
+     #uk{
+
+      margin-bottom: 10%;
+
+     }
+     @media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:100px; border:none; }
+}
+     
+     
+	 
+    
+</style>
+
+</head>
+<body style="background-color:powderblue;">
+<header>
+  <div class="one">
+      <img src="images/3.jpg" alt="image of photo">
+  
+  </div>
+  <div class="two"><h1 id="up">Jistin Jibu</h1></div>
+  <div class="three">
+    <button onclick="down()">About</button>
+    <button onclick="down2()">Contact</button>
+  </div>
+
+</header><br><br>
+<h1>My photographs</h1>
+<div class="gallery">
+<div class="pic1">
+  <img src="images/new1.png" alt="iamge of picture">
+  <h4>Title of Project 1</h4>
+  <p>Project Desrciption</p>
+</div>
+<div class="pic2">
+<img src="images/new2.png" alt="iamge of picture">
+<h4>Title of Project 2</h4>
+  <p>Project Desrciption</p></div>
+<div class="pic3">
+<img src="images/new3.png" alt="iamge of picture">
+<h4>Title of Project 3</h4>
+  <p>Project Desrciption</p></div>
+<div class="pic4">
+<img src="images/new4.png" alt="iamge of picture">
+<h4>Title of Project 4</h4>
+  <p>Project Desrciption</p></div>
+
+</div>
+<br><br>
+<div id="mydiv">
+<h1 id="scroll">ABOUT</h1><br><br>
+<div class="above">
+   <div class="firsthalf">
+        <img src="images/wep.png"  alt="image of person">
+   
+   </div>
+   <div class="secondhalf">
+      <h4>My Experience</h4>
+      <br>
+	  <p>I finished my high school education from St. Antony
+      English medium school, in year 2017 with 92% and then for
+      my higher secondary studies I chose science group in
+      VCSHSS, Puthenvelikara, Ernakulam and secured an
+      overall of 69%.</p>
+   
+   
+   </div>
+</div>
+<h3>My Skills</h3><br><br>
+<div class="skills">
+
+<div class="skill1"><strong>Dependability</strong></div>
+<div class="skill2"><strong>Initiative</strong></div>
+<div class="skill3"><strong>Motivation</strong></div>
+<div class="skill4"><strong>Loyalty</strong></div>
+</div>
+<br>
+<h1 id="cons">CONTACT</h1><br><br>
+<div class="contact">
+<form type="email" name="Personal information" action="https://formspree.io/mwknyabq" method="POST" >
+
+<input type="text" name="name" value="" id="name" placeholder="Name"><br><br>
+<input type="email" name="" value="" id="emailid" placeholder="EMAIL"><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Submit" value="Submit" name="gobutton"></form>
+</div><br><br>
+<div class="footer">
+<div class="foot1"><p>&copy; 2020 Jistin Jibu</p></div>
+<div class="foot2"><img src="images/img3.jpg" alt="image of social media" usemap="#social">
+
+  <map name="social">
+      <area shape="rectangle" href="https://www.facebook.com/profile.php?id=100011728565557" coords="4,4,69,70">
+      <area shape="rectangle" href="https://www.instagram.com/jistin_o/"coords="70,5,133,71">
+  
+  
+  </map>
+  <div id="uk">
+    <button  onclick="down3()">Go Up</button>
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+</div>
+<script>
+  function down() {
+    var elmnt = document.getElementById("scroll");
+    elmnt.scrollIntoView();
+  }
+  
+    function down2() { 
+    var elmnt = document.getElementById("cons");
+     elmnt.scrollIntoView();
+    
+  }
+  function down3(){
+    var elmnt =document.getElementById("up");
+    elmnt.scrollIntoView();
+  }
+  </script>
+</body>
+</html>
